@@ -1,0 +1,27 @@
+@import url("Global.css");
+
+ .contact-details .card i {
+            color: var(--main-color);
+        }
+
+        .contact-form-section .btn-warning {
+            background-color: var(--accent-color);
+            border: none;
+        }
+
+        .social-media a {
+            transition: transform 0.3s;
+        }
+
+        .social-media a:hover {
+            transform: translateY(-3px);
+        }
+
+        .inquiry-process .fa-3x {
+            color: var(--accent-color);
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: white;
+            background-color: var(--main-color);
+        }

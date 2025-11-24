@@ -1,0 +1,82 @@
+@import url("Global.css");
+header{
+    background-color: #fff;
+}
+.card-Book-btn{
+    background-color:var(--main-color);
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0px;
+
+}
+.service-page-text{
+    color: #157347;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.hero-top-text{
+    margin-bottom: 30px;
+}
+
+     
+        .page-hero-section {
+            background-color: #e6f7ff; 
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        .page-hero-section h1 {
+            color: #007b8f; 
+            font-weight: 700;
+        }
+        .service-card .badge {
+            z-index: 10;
+        }
+        #serviceTabs .Fixer-tabs-link.active {
+            background-color: #007b8f !important;
+            color: white !important;
+            border-radius: 50px;
+        }
+        #serviceTabs .Fixer-tabs-link {
+            color: #007b8f;
+            border: 1px solid #007b8f;
+            margin: 0 5px;
+            padding: 8px 20px;
+            border-radius: 50px;
+        }
+        .feature-icon{
+            font-size: 22px !important;
+        }
+        .service-tabs-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth Hover Effect */
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    
+}
+ .service-tabs-card:hover {
+    transform: translateY(-5px); /* Upar uthna */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Shadow badhana */
+}
+ .service-tabs-card .card-img-top {
+    height: 180px; /* Sabhi images ka size equal rahega */
+    object-fit: cover; /* Image ko stretch hone se rokega */
+}
+.tabs-Book-btn {
+    display: block; 
+    text-align: center;
+    padding: 10px;
+    background-color: #ffc107; /* Yellow color */
+    color: #212529;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.tabs-card-body{
+    padding: 20px;
+}

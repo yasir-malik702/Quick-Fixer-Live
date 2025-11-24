@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Service - QuickFixer</title>
+      <link rel="icon" type="image/png" href="../Quick-fixer-img/main-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+   <link rel="stylesheet" href="../Quick-Fixer-Style/Main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar custom-navbar navbar-expand-lg px-3 py-3 mb-0">
+            <div class="container-fluid">
+                <a class="navbar-brand custom-brand" href="index.html"><img src="../Quick-fixer-img/logo-3.png"
+                        alt="Quick-Fixer Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav custom-navbar-nav mb-2 mb-lg-0 ms-auto me-5">
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link custom-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link custom-link " aria-current="page" href="Services.html">Services</a>
+                        </li>
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link custom-link " href="About.html">About</a>
+                        </li>
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link custom-link " href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="nav-book-btn" style="color: var(--green);">
+        <a href="login.html" class="btn  px-4 py-2 fw-bold" style="background-color: var(--main-color); color: #fff;">
+            <i class="fas fa-sign-in-alt me-1"></i> Login
+        </a>
+    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+        <main>
+
+         <section class="booking-hero-section py-5 text-center text-white">
+                 <div class="container">
+                <h1 class="display-5 fw-bold">Book Your QuickFixer Service</h1>
+                <p class="lead">Just 3 quick steps to schedule a certified expert at your doorstep in Faisalabad.</p>
+                <div class="d-flex justify-content-center mt-3">
+                    <span class="badge bg-warning text-dark fs-6 mx-2 py-2 px-3"><i class="fas fa-check-circle me-1"></i> Upfront Pricing</span>
+                    <span class="badge bg-warning text-dark fs-6 mx-2 py-2 px-3"><i class="fas fa-tools me-1"></i> Verified Technicians</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-form-steps py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4" style="color: var(--main-color);"><i class="fas fa-calendar-check me-2"></i> Service Scheduling Form</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+
+                        <form action="process_booking.php" method="POST" class="p-4 border rounded shadow-lg bg-white">
+                            
+                            <fieldset class="mb-4 p-3 border rounded">
+                                <legend class="float-none w-auto px-2 fs-5 fw-bold " style="color: var(--main-color);"><i class="fas fa-cogs me-2"></i> Step 1: Select Service</legend>
+                                
+                                <div class="mb-3">
+                                    <label for="serviceType" class="form-label fw-bold">What service do you need?</label>
+                                    <select class="form-select form-select-lg" id="serviceType" name="serviceType" required>
+                                        <option selected disabled value="">--- Choose a Service Category ---</option>
+                                        <option value="Electrician">Electrician Services</option>
+                                        <option value="Plumber">Plumbing Services</option>
+                                        <option value="ACRepair">AC Installation & Repair</option>
+                                        <option value="Renovation">Home Renovation/General Fix</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="issueDescription" class="form-label fw-bold">Briefly describe the issue:</label>
+                                    <textarea class="form-control" id="issueDescription" name="issueDescription" rows="3" placeholder="e.g., Leaky faucet in the kitchen or circuit breaker trip. This helps us assign the right expert." required></textarea>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="mb-4 p-3 border rounded">
+                                <legend class="float-none w-auto px-2 fs-5 fw-bold " style="color: var(--main-color);"><i class="fas fa-clock me-2"></i> Step 2: Date & Time</legend>
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="bookingDate" class="form-label fw-bold">Preferred Date</label>
+                                        <input type="date" class="form-control" id="bookingDate" name="bookingDate" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="bookingTime" class="form-label fw-bold">Preferred Time Slot</label>
+                                        <select class="form-select" id="bookingTime" name="bookingTime" required>
+                                            <option selected disabled value="">Choose Time...</option>
+                                            <option>8:00 AM - 11:00 AM (Morning)</option>
+                                            <option>11:00 AM - 2:00 PM (Mid-day)</option>
+                                            <option>2:00 PM - 5:00 PM (Afternoon)</option>
+                                            <option>5:00 PM - 8:00 PM (Evening)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="mb-4 p-3 border rounded">
+                                <legend class="float-none w-auto px-2 fs-5 fw-bold" style="color: var(--main-color);"><i class="fas fa-user me-2"></i> Step 3: Contact & Location</legend>
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="fullName" class="form-label fw-bold">Your Full Name</label>
+                                        <input type="text" class="form-control" id="fullName" name="fullName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phoneNumber" class="form-label fw-bold">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="address" class="form-label fw-bold">Full Address (Faisalabad)</label>
+                                    <input type="text" class="form-control" id="address" name="address" placeholder="House/Flat No., Street, Area/Colony" required>
+                                </div>
+                                
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="confirmTerms" required>
+                                    <label class="form-check-label small text-muted" for="confirmTerms">
+                                        I confirm the details are correct and agree to the <a href="#">Terms & Conditions</a>. Your information is safe with us.
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-warning btn-lg fw-bold"><i class="fas fa-bolt me-2"></i> Confirm & Book Service</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 QuickFixer. All rights reserved.</p>
+        </div>
+    </footer> 
+
+
+
+
+
+
+
+   
+
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Example: Logic for search bar on Services page
+        document.querySelector('.search-page-services button').addEventListener('click', function () {
+            const query = document.querySelector('.search-page-services input').value.toLowerCase().trim();
+            if (query) {
+                alert(`Searching for: ${query}. (Yahan aap filtering logic laga sakte hain)`);
+            }
+        });
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+</html>

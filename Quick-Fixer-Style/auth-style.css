@@ -1,0 +1,123 @@
+@import url("Global.css");
+ .booking-hero-section {
+            background-color: var(--main-color);
+        }
+        .booking-form-steps .border {
+            border-color: #dee2e6 !important;
+        }
+        .booking-form-steps legend {
+            color: var(--main-color);
+            background-color: white;
+        }
+        .booking-form-steps .btn-warning {
+            background-color: var(--accent-color);
+            border: none;
+            color: var(--main-color);
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+        }
+        
+        .registration-form-card {
+            border-top: 5px solid var(--employee-color);
+            border-radius: 8px;
+        }
+
+
+        .registration-form-card h2, .registration-form-card h3 {
+            color: var(--employee-color);
+        }
+
+      
+        .register-btn {
+            background-color: var(--employee-color);
+            border: none;
+            color: white;
+        }
+        .register-btn:hover {
+            background-color: #2c3e50;
+        }
+         .login-form-card {
+            border-top: 5px solid var(--main-color);
+            border-radius: 8px;
+        }
+
+        .login-form-card h2 {
+            color: var(--main-color);
+        }
+        
+        /* Form Controls focus/shadows */
+        .form-control:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+        }
+        
+        /* Button Styling */
+        .login-btn {
+            background-color: var(--accent-color);
+            border: none;
+            color: var(--main-color);
+        }
+        .login-btn:hover {
+            background-color: #e0a800;
+        }
+        
+        .chooser-hero {
+            background-color: #f8f9fa;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .access-card {
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        /* Customer Card Styling */
+        .customer-card {
+            border-top: 5px solid var(--main-color);
+            background-color: white;
+        }
+        .customer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .customer-card .icon {
+            color: var(--main-color);
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .customer-card .btn-customer {
+            background-color: var(--main-color);
+            color: white;
+            font-weight: bold;
+        }
+        
+        /* Employee Card Styling */
+        .employee-card {
+            border-top: 5px solid var(--employee-color);
+            background-color: white;
+        }
+        .employee-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .employee-card .icon {
+            color: var(--employee-color);
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .employee-card .btn-employee {
+            background-color: var(--employee-color);
+            color: white;
+            font-weight: bold;
+        }
+    

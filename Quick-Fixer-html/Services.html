@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick-Fixer</title>
+    <link rel="icon" type="image/png" href="../Quick-fixer-img/main-logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="../Quick-Fixer-Style/Main.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar custom-navbar navbar-expand-lg px-3 py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand custom-brand" href="index.html"><img src="../Quick-fixer-img/logo-3.png"
+            alt="Quick-Fixer Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav custom-navbar-nav mb-2 mb-lg-0 ms-auto me-5">
+            <li class="nav-item custom-nav-item">
+              <a class="nav-link custom-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item custom-nav-item">
+              <a class="nav-link custom-link active" aria-current="page" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item custom-nav-item">
+              <a class="nav-link custom-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item custom-nav-item">
+              <a class="nav-link custom-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-book-btn" style="color: var(--green);">
+        <a href="login.html" class="btn  px-4 py-2 fw-bold" style="background-color: var(--main-color); color: #fff;">
+            <i class="fas fa-sign-in-alt me-1"></i> Login
+        </a>
+    </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <section class="page-hero-section">
+    <div class="container text-center">
+      <h1 class="display-4 mb-3">Your Complete Solution for Home Repairs</h1>
+      <p class="lead">Explore our full range of certified, reliable, and affordable services in Faisalabad.</p>
+
+      <div class="search-page-services d-flex justify-content-center mt-4">
+        <input type="text" class="form-control me-2" placeholder="Search services (e.g., 'AC Repair', 'Plumbing')"
+          style="max-width: 400px;">
+        <button class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-list py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">All Home Repair & Installation Services</h2>
+
+      <ul class="nav nav-pills mb-5 justify-content-center" id="serviceTabs" role="tablist">
+        <li class="nav-item Fixer-tabs-item" role="presentation">
+          <button class="nav-link Fixer-tabs-link active" id="all-tab" data-bs-toggle="pill"
+            data-bs-target="#all-services" type="button" role="tab">All Services</button>
+        </li>
+        <li class="nav-item Fixer-tabs-item" role="presentation">
+          <button class="nav-link Fixer-tabs-link" id="elect-tab" data-bs-toggle="pill" data-bs-target="#elect-services"
+            type="button" role="tab">Electric & Tech</button>
+        </li>
+        <li class="nav-item Fixer-tabs-item" role="presentation">
+          <button class="nav-link Fixer-tabs-link" id="plumbing-tab" data-bs-toggle="pill"
+            data-bs-target="#plumbing-services" type="button" role="tab">Plumbing & Carpentry</button>
+        </li>
+        <li class="nav-item Fixer-tabs-item" role="presentation">
+          <button class="nav-link Fixer-tabs-link" id="renov-tab" data-bs-toggle="pill" data-bs-target="#renov-services"
+            type="button" role="tab">Renovation & Painting</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="serviceTabsContent">
+        <div class="tab-pane fade show active" id="all-services" role="tabpanel" aria-labelledby="all-tab">
+
+          <div class="row services-row g-4">
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <div class="card service-card position-relative">
+                <span class="badge bg-warning position-absolute top-0 start-0 m-2">TOP INSTALLATION</span>
+                <img src="../Quick-fixer-img/solar-1.jpg" class="card-img-top img-fluid" alt="Solar Installations">
+                <div class="card-body">
+                  <h5 class="card-title">Solar Installations</h5>
+                  <p>Reliable solar panel setup for your home or office — efficient, affordable, and eco-friendly.</p>
+                  <div class="card-btn-group">
+                    <a href="Booking-page.html" class="card-Book-btn"><i class="fas fa-calendar-check"></i> Book Now
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <div class="card service-card">
+                <img src="../Quick-fixer-img/carpenter-1.jpg" class="card-img-top" alt="Carpentry">
+                <div class="card-body">
+                  <h5 class="card-title">Carpentry</h5>
+                  <p>Skilled carpenters for furniture repair, door fixing, and custom woodwork.</p>
+                  <div class="card-btn-group">
+                    <a href="Booking-page.html" class="card-Book-btn"><i class="fas fa-calendar-check"></i> Book Now
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <div class="card service-card">
+                <img src="../Quick-fixer-img/Plumber-1.jpg" class="card-img-top" alt="Plumbing">
+                <div class="card-body">
+                  <h5 class="card-title">Plumbing</h5>
+                  <p>Reliable plumbing services for your home or office — quick, efficient, and affordable.</p>
+                  <div class="card-btn-group">
+                    <a href="Booking-page.html" class="card-Book-btn"><i class="fas fa-calendar-check"></i> Book Now
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <div class="card service-card">
+                <img src="../Quick-fixer-img/Ac-1.avif" class="card-img-top" alt="AC Repair">
+                <div class="card-body">
+                  <h5 class="card-title">AC Repair & Service</h5>
+                  <p>Reliable AC technicians for cooling issues, servicing, and gas refills — stay chill all year.</p>
+                  <div class="card-btn-group">
+                    <a href="Booking-page.html" class="card-Book-btn"><i class="fas fa-calendar-check"></i> Book Now
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <div class="card service-card">
+                <img src="../Quick-fixer-img/Electrician-5.jpg" class="card-img-top img-fluid" alt="Electrician Services">
+                <div class="card-body">
+                  <h5 class="card-title">Electrician Services</h5>
+                  <p>Certified electricians for wiring, lighting, and appliance repairs — safety you can trust.</p>
+                  <div class="card-btn-group">
+                    <a href="Booking-page.html" class="card-Book-btn"><i class="fas fa-calendar-check"></i> Book Now
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <div class="card service-card">
+                <img src="../Quick-fixer-img/Home renovation-1.jpg" class="card-img-top img-fluid" alt="Home Renovation">
+                <div class="card-body">
+                  <h5 class="card-title">Home Renovation</h5>
+                  <p>Upgrade your home with complete renovation, flooring, and interior design services.</p>
+                  <div class="card-btn-group">
+                    <a href="Booking-page.html" class="card-Book-btn"><i class="fas fa-calendar-check"></i> Book Now
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <div class="card service-card">
+                <img src="../Quick-fixer-img/Home-appilences-1.jpg" class="card-img-top img-fluid" alt="Appliance Repair">
+                <div class="card-body">
+                  <h5 class="card-title">Appliance Repair</h5>
+                  <p>Quick fixes for washing machines, ovens, fridges, and more — all under one roof.</p>
+                  <div class="card-btn-group">
+                    <a href="Booking-page.html" class="card-Book-btn"><i class="fas fa-calendar-check"></i> Book Now
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <div class="card service-card">
+                <img src="../Quick-fixer-img/painter-1.jpg" class="card-img-top img-fluid" alt="Painting">
+                <div class="card-body">
+                  <h5 class="card-title">Painting</h5>
+                  <p>Professional painters to refresh your home with smooth, long-lasting color finishes.</p>
+                  <div class="card-btn-group">
+                    <a href="Booking-page.html" class="card-Book-btn"><i class="fas fa-calendar-check"></i> Book Now
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <div class="card service-card">
+                <img src="../Quick-fixer-img/Welding-1.jpg" class="card-img-top img-fluid" alt="Welding">
+                <div class="card-body">
+                  <h5 class="card-title">Welding & Metalwork</h5>
+                  <p>Professional welders for gate, grill, and metal repair work — strong joints, lasting results.</p>
+                  <div class="card-btn-group">
+                    <a href="Booking-page.html" class="card-Book-btn"><i class="fas fa-calendar-check"></i> Book Now
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <div class="card service-card">
+                <img src="../Quick-fixer-img/Home-cleaning-1.jpg" class="card-img-top img-fluid" alt="Cleaning">
+                <div class="card-body">
+                  <h5 class="card-title">Deep Cleaning Services</h5>
+                  <p>Deep cleaning for homes, kitchens, and offices — we make every corner shine again.</p>
+                  <div class="card-btn-group">
+                    <a href="Booking-page.html" class="card-Book-btn"><i class="fas fa-calendar-check"></i> Book Now
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="elect-services" role="tabpanel" aria-labelledby="elect-tab">
+          <div class="row services-row g-4">
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/Main-electrician.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Electrician Services</h5>
+
+                  <p class="tabs-card-text">Safety-certified wiring, urgent repairs, and complete lighting solutions.
+                  </p>
+
+                  <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Electrician Services'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/AC ServiceCleaning.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">AC Repair & Service</h5>
+
+                  <p class="tabs-card-text"> Reliable cooling system maintenance, gas refills, and urgent repairs for
+                    all types of ACs..</p>
+
+                  <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=AC Repair & Service'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/Fridge Repair.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Fridge & Freezer Repair</h5>
+
+                  <p class="tabs-card-text"> On-site diagnosis and repair for cooling issues, gas leakage, and parts
+                    replacement.</p>
+
+                  <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Fridge & Freezer Repair'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/applices.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title"> Appliance Repair</h5>
+
+                  <p class="tabs-card-text"> Quick fixes for washing machines, ovens, water dispensers, and other home
+                    appliances.</p>
+
+                <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service= Appliance Repair'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/Main BreakerDB Installation.jpg" class="card-img-top"
+                  alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">DP / Breaker Box Repair</h5>
+
+                  <p class="tabs-card-text"> Fixing tripped breakers, main panel installation, and meter wiring issues.
+                  </p>
+
+                     <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=DP / Breaker Box Repair'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/Out Door maintaines.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Fan Installation & Repair</h5>
+
+                  <p class="tabs-card-text"> All types of ceiling, pedestal, and exhaust fan installation, repair, and
+                    winding service.</p>
+
+                  <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Fan Installation & Repair'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/two men -solar.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Solar Installations</h5>
+
+                  <p class="tabs-card-text"> Expert installation of solar panels and inverters for homes and businesses.
+                  </p>
+
+         <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Solar Installations'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="plumbing-services" role="tabpanel" aria-labelledby="plumbing-tab">
+          <div class="row services-row g-4">
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/Plumber-1.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">General Plumbing</h5>
+
+                  <p class="tabs-card-text">Quick fixes for leaks, drain blockage, burst pipes, and urgent water issues.
+                  </p>
+
+                
+         <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=General Plumbing'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/bathroom-fitinh.png" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Bathroom & Kitchen Fittings</h5>
+
+                  <p class="tabs-card-text">Installation and repair of new faucets, showers, commodes, sinks, and other
+                    fittings.</p>
+  <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Bathroom & Kitchen Fittings'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/motor-pump.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Water Motor & Pump Repair</h5>
+
+                  <p class="tabs-card-text">Installation, repair, and troubleshooting of water pumps and pressure
+                    motors.</p>
+
+        <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Water Motor & Pump Repair'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/images.jpeg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Water Tank Cleaning</h5>
+
+                  <p class="tabs-card-text">Hygienic and professional cleaning of underground and overhead water storage
+                    tanks.</p>
+
+                  <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Water Tank Cleaning'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/repair-chair.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Furniture Repair</h5>
+
+                  <p class="tabs-card-text">Fixing broken chairs, tables, beds, and general wooden furniture
+                    restoration.</p>
+
+       <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Furniture Repair'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/wod-window.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">FDoor & Window Repair</h5>
+
+                  <p class="tabs-card-text">Fixing broken chairs, tables, beds, and general wooden furniture
+                    restoration.</p>
+
+            <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=FDoor & Window Repair'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/Custom-carpenter.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Custom Woodwork</h5>
+
+                  <p class="tabs-card-text">Custom shelves, cabinets, small wooden partitions, and bespoke fixture
+                    creation.</p>
+
+          <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Custom Woodwork'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/Welding-1.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Welding & Metalwork</h5>
+
+                  <p class="tabs-card-text">Gate, grill, and railing repair, fabrication, and custom metalwork services.
+                    .</p>
+
+         <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Welding & Metalwork'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="renov-services" role="tabpanel" aria-labelledby="renov-tab">
+          <div class="row services-row g-4">
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/Interior-painting.png" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Interior Painting</h5>
+
+                  <p class="tabs-card-text">A professional painter applying a fresh coat of paint to an interior wall,
+                    achieving a smooth and even finish.</p>
+
+                <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Interior Painting'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/Extrior-painting.avif" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Exterior Painting</h5>
+
+                  <p class="tabs-card-text">Durable and weather-resistant paint solutions for exterior walls, gates, and
+                    boundary walls.</p>
+
+                <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Exterior Painting'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/Dampness & Seepage Repair.jpg" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Dampness & Seepage Repair</h5>
+
+                  <p class="tabs-card-text">Expert solutions for wall dampness, cracks, and water seepage issues before
+                    painting.</p>
+
+                <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Dampness & Seepage Repair'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/Home Renovation.png" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Home Renovation</h5>
+
+                  <p class="tabs-card-text">Full interior and exterior remodeling, flooring, and interior design
+                    services for a modern home.</p>
+<span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Home Renovation'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/pvc-wall-panels-for-hiding-wall-dampness-one.jpg" class="card-img-top"
+                  alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">False Ceiling & Drywall</h5>
+
+                  <p class="tabs-card-text">Installation and repair of stylish false ceilings, gypsum work, and drywall
+                    partitions.</p>
+
+                <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=False Ceiling & Drywall'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/Flooring Installation & Repair.avif" class="card-img-top"
+                  alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Flooring Installation & Repair</h5>
+
+                  <p class="tabs-card-text">Expert installation of tiles, marble, wooden flooring, and repair for
+                    damaged floors.</p>
+
+                 <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Flooring Installation & Repair'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ">
+              <a href="service-detail/example-service.html" class="service-tabs-card d-block">
+
+                <img src="../Quick-fixer-img/deep cleaning.avif" class="card-img-top" alt="Service Image Name">
+
+                <div class="card-body tabs-card-body text-black">
+                  <h5 class="tabs-card-title">Deep Cleaning Services</h5>
+
+                  <p class="tabs-card-text">Complete home cleaning, kitchen scrubbing, and specialized sofa/carpet
+                    washing for a fresh look.</p>
+
+                   <span class="tabs-Book-btn mt-3"
+                    onclick="window.location.href='Booking-page.html?service=Deep Cleaning Services'; return false;">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                  </span>
+                </div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose-us section-gap py-5" style="background-color: #f8f8f8;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Why Choose Quick-Fixer</h2>
+          <p class="section-sub">Professional, fast and trusted home repair services — here’s why customers pick us</p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="feature-card text-center p-3">
+            <div class="feature-icon mb-3"> <i class="fas fa-user-check fa-2x"></i> </div>
+            <h5 class="feature-title">Certified Professionals</h5>
+            <p class="feature-desc">Qualified & background-checked technicians to ensure safe, high-quality work.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="feature-card text-center p-3">
+            <div class="feature-icon mb-3"> <i class="fas fa-clock fa-2x"></i> </div>
+            <h5 class="feature-title">Fast & Reliable</h5>
+            <p class="feature-desc">Quick response times and punctual arrivals — we respect your time.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="feature-card text-center p-3">
+            <div class="feature-icon mb-3"> <i class="fas fa-tags fa-2x"></i> </div>
+            <h5 class="feature-title">Affordable Pricing</h5>
+            <p class="feature-desc">Transparent rates and clear estimates — no hidden charges.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="feature-card text-center p-3">
+            <div class="feature-icon mb-3"> <i class="fas fa-headset fa-2x"></i> </div>
+            <h5 class="feature-title">24/7 Support</h5>
+            <p class="feature-desc">Book anytime — our support team is available around the clock.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section text-center py-5" style="background-color: #007b8f; color: white;">
+    <div class="container">
+      <h2 class="mb-3">Ready to Book Your Service?</h2>
+      <p class="mb-4 text-white">Get reliable and fast home repair service in just three easy steps.</p>
+      <a href="Booking-page.html" class="btn btn-warning btn-lg px-5 fw-bold">Book Service Now</a>
+    </div>
+  </section>
+
+  <footer class="text-center py-4" style="background-color: #005668; color: white;">
+    <div class="container">
+      <p>Quick Fixer &copy; 2025 — All Rights Reserved.</p>
+      <div>
+        <a href="index.html" class="text-white me-3">Home</a>
+        <a href="Services.html" class="text-white me-3">Services</a>
+        <a href="About.html" class="text-white me-3">About Us</a>
+        <a href="contact.html" class="text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+    <script>
+    // Function to get the value of a specific parameter from the URL
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // Check if a service parameter exists in the URL
+    const selectedService = getQueryParam('service');
+    const serviceDropdown = document.getElementById('serviceType');
+
+    if (selectedService && serviceDropdown) {
+        // Dropdown ke options mein check karein
+        for (let i = 0; i < serviceDropdown.options.length; i++) {
+            if (serviceDropdown.options[i].value === selectedService) {
+                // Agar value match kar gayi, toh usko select kar dein
+                serviceDropdown.value = selectedService;
+                
+                // Extra visual confirmation: Dropdown ko highlight kar dein (Optional)
+                serviceDropdown.style.borderColor = 'var(--main-color)';
+                serviceDropdown.style.boxShadow = '0 0 0 0.15rem rgba(0, 123, 143, 0.25)';
+                break;
+            }
+        }
+    }
+</script>
+
+  <script>
+    // Example: Logic for search bar on Services page
+    document.querySelector('.search-page-services button').addEventListener('click', function () {
+      const query = document.querySelector('.search-page-services input').value.toLowerCase().trim();
+      if (query) {
+        alert(`Searching for: ${query}. (Yahan aap filtering logic laga sakte hain)`);
+      }
+    });
+  </script>
+</body>
+
+</html>

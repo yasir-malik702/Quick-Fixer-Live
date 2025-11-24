@@ -1,0 +1,92 @@
+@import url("Global.css");
+        .Header{
+            padding-top: 2rem !important;
+        }
+        .about-hero-section {
+            background-color: var(--main-color);
+            padding: 80px 0;
+            margin-top: -22px;
+        }
+        .about-story-philosophy {
+            background-color: #f8f9fa; 
+        }
+        .about-story-philosophy h2 {
+            color: var(--main-color);
+        }
+        .quickfixer-difference .p-4 {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #eee;
+        }
+        .quickfixer-difference .p-4:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .quickfixer-difference i {
+            color: var(--accent-color);
+        }
+        .cta-section {
+            background-color: var(--main-color);
+            color: white;
+            padding: 60px 0;
+        }
+        .cta-section .btn-warning {
+            background-color: var(--accent-color);
+            border: none;
+        }
+
+        .about-hero-section img {
+            max-height: 400px;
+            object-fit: cover;
+            width: 100%;
+        }
+        /* New styles for partnership logo animation */
+.logo-track {
+    display: flex; /* Logos ko ek line mein rakhne ke liye */
+    width: 200%; /* Track ki width badhani hogi taki logos do baar aa sakein */
+    animation: slide-logos 30s linear infinite; /* Animation ka naam, time aur speed */
+}
+
+@keyframes slide-logos {
+    0% {
+        transform: translateX(0); /* Shuruaat mein koi movement nahi */
+    }
+    100% {
+        transform: translateX(-50%); /* Poora track aadha move karega */
+    }
+}
+
+.partnerships .logo-container {
+    overflow: hidden; /* Bahar nikle hue logos ko chhupane ke liye */
+    padding: 20px 0;
+    white-space: nowrap; /* Logos ko ek hi line mein rakhne ke liye */
+}
+
+.partnerships .logo-track img {
+    max-height: 50px;
+    margin: 0 40px; /* Logos ke beech mein space */
+    width: auto;
+    display: inline-block;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.partnerships .logo-track img:hover {
+    opacity: 1; /* Hover karne par zyada visible */
+}
+
+/* Logos ko repeat karne ke liye, taki loop smooth lage */
+.logo-track .logo-clone {
+    display: inline-block;
+}
+.mark-img {
+    display: flex;
+    gap: 100px;
+    align-items: center; /* Optional: to vertically center images */
+}
+
+.slider-img {
+    height: 100px;
+    width: 140px;
+    object-fit: contain;
+    margin: 0;
+}
